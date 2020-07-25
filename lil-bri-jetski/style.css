@@ -1,0 +1,26 @@
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  background-image: url('https://static.booska-p.com/images/news_opti/1000/lil-pump-avant-la-celebrite-les-dreads-et-les-tatouages-photo.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+p {
+  color: white;
+  letter-spacing: 2px;
+  margin: 0;
+}

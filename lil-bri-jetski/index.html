@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>lil bri jetski's fame</title>
+  </head>
+  <body>
+    <p>viewed</p>
+    <h1 id="count">0</h1>
+    <p>times</p>
+  </body>
+  <script>
+    const countEl = document.getElementById('count');
+
+    updateVisitCount();
+
+    function updateVisitCount() {
+      fetch('https://api.countapi.xyz/update/lilbrijetski/Y5kVeLBNJ0/?amount=1')
+        .then((res) => res.json())
+        .then((res) => {
+          countEl.innerHTML = res.value;
+        });
+    }
+  </script>
+</html>
